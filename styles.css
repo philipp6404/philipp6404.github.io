@@ -1,6 +1,7 @@
 .h1_custom {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 500px;
     text-align: center;
+    margin-top: 10%;
 }
