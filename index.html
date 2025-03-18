@@ -9,10 +9,21 @@
     <body>
         <h1 class="h1_custom" id="demo"></h1>
         <script>
-            document.getElementById("demo").innerText = "Hello World!"
+            let counter = 0;
+            function count() {
+                counter++;
+                document.querySelector("p").innerHTML = counter;
+            }
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("demo").innerText = "Hello World!"
+                document.querySelector("button").onclick = count
+            })
         </script>
         <h1 style="text-align: center; margin-top: 30px;">
             This is my github page
         </h1>
+        <p style="text-align: center; margin-top: 30px; font-size: larger;">
+        </p>
+        <button id="count"></button>
     </body>
 </html>
